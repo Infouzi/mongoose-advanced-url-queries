@@ -1,0 +1,5 @@
+node_modules/
+.idea/
+mongoose-advanced-url-queries.iml
+.prettierrc
+.eslintrc.json

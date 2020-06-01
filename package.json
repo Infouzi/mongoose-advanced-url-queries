@@ -1,0 +1,36 @@
+{
+  "name": "mongoose-advanced-url-queries",
+  "version": "1.0.0",
+  "description": "A wrapper for mongoose query functions: find() and aggregate() to let users be able to do url queries dynamically with find() and aggregate().",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Fouzi Otoman",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Infouzi/mongoose-advanced-url-queries.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Infouzi/mongoose-advanced-url-queries/issues"
+  },
+  "homepage": "https://github.com/Infouzi/mongoose-advanced-url-queries#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.9.16"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-security": "^1.4.0",
+    "prettier": "^2.0.5"
+  }
+}
