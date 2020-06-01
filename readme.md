@@ -1,4 +1,4 @@
-# mongoose-advanced-url-queries
+# Wrapper for advanced query strings configuration
 
 This project is for every web developer using Nodejs. Express, MongoDB, who wants to start a project, but, don't want to waste time on writing the logic behind managing users.
 
@@ -116,15 +116,15 @@ The power of this class is that it can be used with any Mongoose.Model.
 
 Exemple of instantiation:
 ```javascript
-    const features = new APIFeatures(Model.find(), req.query)
+const features = new ApiFeatures(Model.find(), req.query)
       .filter()
-      .sort()
-      .limitFields()
-      .paginate();
+      .sort('createdAt')
+      .limitFields('-email', '-age')
+      .paginate(1, 100);
 
     const doc = await features.query;
 ```
-Here, the `APIFeatures` constructor takes as first argument: `Model.find()` which is a query Mongoose query object. The second parameter is the query object that comes with the request (`req.query`).
+Here, the `ApiFeatures` constructor takes as first argument: `Model.find()` which is a query Mongoose query object. The second parameter is the query object that comes with the request (`req.query`).
 
 Then, we call:
 1. `filter()`: 

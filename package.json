@@ -1,12 +1,28 @@
 {
-  "name": "mongoose-advanced-url-queries",
+  "name": "mongoose-advanced-query-string",
   "version": "1.0.1",
-  "description": "A wrapper for mongoose query functions: find() and aggregate() to let users be able to do url queries dynamically with find() and aggregate().",
+  "description": "A wrapper for mongoose query functions: find() and aggregate() to let users be able to do query strings dynamically with find() and aggregate(). It lets them use dynamic filtering, sorting, projecting and paginating",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
+  "scripts": {},
+  "keywords": [
+    "query strings",
+    "url queries",
+    "queries",
+    "mongoose queries",
+    "mongoose",
+    "query filtering",
+    "query sorting",
+    "query paginating",
+    "query projecting",
+    "filtering",
+    "filter",
+    "sorting",
+    "sort",
+    "paginating",
+    "pagination",
+    "projection",
+    "limit fields"
+  ],
   "author": "Fouzi Otoman",
   "license": "ISC",
   "repository": {
