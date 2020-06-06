@@ -45,15 +45,17 @@ class AggregateFeatures {
       this.aggregate.pipeline().push({ $sort: sortBy });
     } else {
       if (defaultSort) {
-        if (defaultSort.startsWith('-')) {
-          this.aggregate.pipeline().push({
-            $sort: { [defaultSort.substring(1)]: -1 },
-          });
-        } else {
-          this.aggregate.pipeline().push({
-            $sort: { [defaultSort]: 1 },
-          });
-        }
+        const sortBy = {};
+        defaultSort.split(',').forEach((el) => {
+          if (el.startsWith('-')) {
+            el = el.substring(1);
+            sortBy[el] = -1;
+          } else {
+            sortBy[el] = 1;
+          }
+        });
+
+        this.aggregate.pipeline().push({ $sort: sortBy });
       }
     }
     return this;

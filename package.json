@@ -1,6 +1,6 @@
 {
   "name": "mongoose-advanced-query-string",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A wrapper for mongoose query functions: find() and aggregate() to let users be able to do query strings dynamically with find() and aggregate(). It lets them use dynamic filtering, sorting, projecting and paginating",
   "main": "index.js",
   "scripts": {},

@@ -119,7 +119,7 @@ const threads = await features.query;
 
 ###  [sort(defaultSort)](#sort):
 ---
-Allows to sort the result in ascending/descending order, if "sort" parameter is included in the query string. If not, `defaultSort` is the default sort field.
+Allows to sort the result in ascending/descending order, if "sort" parameter is included in the query string. If not, `defaultSort` is the default sort fields (can be separated by comma).
 
    * Asc: `request?sort=field`
    * Desc: `request?sort=-field`
